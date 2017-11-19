@@ -1,0 +1,146 @@
+<img class="cb-slideshow" src="https://anima-uploads.s3.amazonaws.com/59d51160db5905000cd39032/59d6ba828e2a25000b68a132/59d6ba848e2a25000b68a134/img/magictrippexelsphoto249020.png">
+<img style="background:rgba(255,255,255,0.0);top:10%;height:525px;width:100%;position:absolute;left:0;opacity:.2" src="https://anima-uploads.s3.amazonaws.com/59d51160db5905000cd39032/59e503b1139e6a000d4b1c25/59e59016414c98000b268ee4/img/bwmagic2rectangle.png" anima-src="https://anima-uploads.s3.amazonaws.com/59d51160db5905000cd39032/59e503b1139e6a000d4b1c25/59e59016414c98000b268ee4/img/bwmagic2rectangle.png">
+
+<style>
+.navbar.container:before,
+.navbar.container:after,
+.navbar .row:before,
+.navbar .row:after {
+   content: normal; 
+}
+</style>
+
+
+<div class="navbar navbar-default navbar-static-top" role="navigation" style="background-color: rgba(47,47,57,100); margin: 0; height: 72px; width: 100%">
+<div class="row" id="Header">
+		<div class="col-md-2 col-sm-6 col-xs-6">
+			<a href="#"><img src="https://s3.amazonaws.com/aws-website-bluewander-syg36/image/BlueWanderLogo.png" alt="BlueWander" class="logo"></a>
+		</div>
+
+	<div class="col-md-8" id="HeaderCenterList" style="color:#FFF;">
+    		<ul>
+    			<li><a id="PlanForMe" href="/join?action=planforme">Plan for Me</a></li>
+    			<li><a id="DoItMyself" href="#" data-toggle="modal" data-target="#diyModal">Do It Myself</a></li>
+    			<li><a id="Experiences" href="#" data-toggle="modal" data-target="#experiencesModal">Experiences</a></li>
+    			<li><a id="Destinations" href="#" data-toggle="modal" data-target="#destinationsModal">Destinations</a></li>
+    		</ul>
+    	</div>
+
+                <div class="col-sm-6 col-xs-6" id="sandwichIcon">
+			<a href="#">HELLO</a>
+		</div>
+
+    	<div class="col-md-2" id="dropdownContainer">
+    		<div class="dropdown">
+  				<button onclick="myFunction()" class="dropbtn">Account</button>
+  				<div id="myDropdown" class="dropdown-content">
+    				     <a href="/dashboard">Login</a>
+    				     <a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+		                </div>
+    	</div>
+</div>
+
+	
+
+</div>
+</div>
+
+
+<div class="modal" id="experiencesModal" tabindex="-1" role="dialog" style="top:30%;opacity:0.9">
+<div class="modal-dialog modal-md" role="document" style="border:solid 1px #ccac00;width:450px">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;align-items:center">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button><br>
+<div style="color:#fff;font-size:14px;text-align:center;">Learn about the luxury travel experiences curated by our experts!</div>
+<br>
+
+<div class="row">
+   <div class="col-sm-7 col-md-7 col-lg-7" style="padding-left:5%;">
+      <input type="email" class="form-control" id="email" placeholder="Your email address">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:5%;">
+      <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color:#ccac00;border-radius:0 0 0 0">Submit</button>
+   </div>
+</div>
+<br>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="modal" id="destinationsModal" tabindex="-1" role="dialog" style="top:30%;opacity:0.9">
+<div class="modal-dialog modal-md" role="document" style="border:solid 1px #ccac00;width:450px">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;align-items:center">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button><br>
+<div style="color:#fff;font-size:14px;text-align:center;">Learn about our luxury destinations!</div>
+<br>
+
+<div class="row">
+   <div class="col-sm-7 col-md-7 col-lg-7" style="padding-left:10%;">
+      <input type="email" class="form-control" id="email" placeholder="Your email address">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:5%;">
+      <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color:#ccac00;border-radius:0 0 0 0">Submit</button>
+   </div>
+</div>
+<br>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="modal" id="diyModal" tabindex="-1" role="dialog" style="top: 30%; opacity: 0.9; display: none;">
+<div class="modal-dialog modal-md" role="document" style="border:solid 1px #ccac00;">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;text-align: center;" id="stick3">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button><br>
+<div style="color:#fff;font-size:18px;">Coming soon!</div>
+<div style="color:#fff;font-size:14px;">Be the first to know when it's available</div>
+<br>
+<div class="row">
+   <div class="col-sm-8 col-md-8 col-lg-8" style="padding-left:10%;">
+      <input type="email" class="form-control" id="email" placeholder="enter your email">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:5%;">
+      <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color:#ccac00;border-radius:0 0 0 0">Submit</button>
+   </div>
+</div>
+<br>
+<div style="color:#fff;font-size:14px;">You can have your trip planned by an expert using "<a href="http://bluewander.life/join?action=planforme"><span style="color:#ccac00;"><u>Plan for me</u></span></a>"</div>
+<br>					
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="modal" id="signupModal" tabindex="-1" role="dialog" style="top:30%;opacity:0.9">
+<div class="modal-dialog modal-md" role="document" style="border:solid 1px #ccac00;width:450px">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;align-items:center">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button>
+<br>
+<div class="row">
+   <div class="col-sm-7 col-md-7 col-lg-7" style="padding-left:10%;">
+      <input type="email" class="form-control" id="email" placeholder="Your email address">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:5%;">
+      <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color:#ccac00;border-radius:0 0 0 0">Sign Up</button>
+   </div>
+</div>
+<br>
+
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,529 @@
+<!--Background-->
+
+
+<img class="cb-slideshow" src="https://anima-uploads.s3.amazonaws.com/59d51160db5905000cd39032/59d6ba828e2a25000b68a132/59d6ba848e2a25000b68a134/img/magictrippexelsphoto249020.png">
+<img style="background:rgba(255,255,255,0.0);top:10%;height:525px;width:100%;position:absolute;left:0;opacity:.2" src="https://anima-uploads.s3.amazonaws.com/59d51160db5905000cd39032/59e503b1139e6a000d4b1c25/59e59016414c98000b268ee4/img/bwmagic2rectangle.png" anima-src="https://anima-uploads.s3.amazonaws.com/59d51160db5905000cd39032/59e503b1139e6a000d4b1c25/59e59016414c98000b268ee4/img/bwmagic2rectangle.png">
+
+<style>
+.navbar.container:before,
+.navbar.container:after,
+.navbar .row:before,
+.navbar .row:after {
+   content: normal; 
+}
+</style>
+
+
+<div class="navbar navbar-default navbar-static-top" role="navigation" style="background-color: rgba(47,47,57,100); margin: 0; height: 72px; width: 100%">
+<div class="row" id="Header">
+		<div class="col-md-2 col-sm-6 col-xs-6">
+			<a href="#"><img src="https://s3.amazonaws.com/aws-website-bluewander-syg36/image/BlueWanderLogo.png" alt="BlueWander" class="logo"></a>
+		</div>
+
+	<div class="col-md-8" id="HeaderCenterList" style="color:#FFF;">
+    		<ul>
+    			<li><a id="PlanForMe" href="/join?action=planforme">Plan for Me</a></li>
+    			<li><a id="DoItMyself" href="#" data-toggle="modal" data-target="#diyModal">Do It Myself</a></li>
+    			<li><a id="Experiences" href="#" data-toggle="modal" data-target="#experiencesModal">Experiences</a></li>
+    			<li><a id="Destinations" href="#" data-toggle="modal" data-target="#destinationsModal">Destinations</a></li>
+    		</ul>
+    	</div>
+
+                <div class="col-sm-6 col-xs-6" id="sandwichIcon">
+			<a href="#">HELLO</a>
+		</div>
+
+    	<div class="col-md-2" id="dropdownContainer">
+    		<div class="dropdown">
+  				<button onclick="myFunction()" class="dropbtn">Account</button>
+  				<div id="myDropdown" class="dropdown-content">
+    				     <a href="/dashboard">Login</a>
+    				     <a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+		                </div>
+    	</div>
+</div>
+
+	
+
+</div>
+</div>
+
+
+<div class="modal" id="experiencesModal" tabindex="-1" role="dialog" style="top:30%;opacity:0.9">
+<div class="modal-dialog modal-md" role="document" style="border:solid 1px #ccac00;width:450px">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;align-items:center">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button><br>
+<div style="color:#fff;font-size:14px;text-align:center;">Learn about the luxury travel experiences curated by our experts!</div>
+<br>
+
+<div class="row">
+   <div class="col-sm-7 col-md-7 col-lg-7" style="padding-left:5%;">
+      <input type="email" class="form-control" id="email" placeholder="Your email address">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:5%;">
+      <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color:#ccac00;border-radius:0 0 0 0">Submit</button>
+   </div>
+</div>
+<br>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="modal" id="destinationsModal" tabindex="-1" role="dialog" style="top:30%;opacity:0.9">
+<div class="modal-dialog modal-md" role="document" style="border:solid 1px #ccac00;width:450px">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;align-items:center">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button><br>
+<div style="color:#fff;font-size:14px;text-align:center;">Learn about our luxury destinations!</div>
+<br>
+
+<div class="row">
+   <div class="col-sm-7 col-md-7 col-lg-7" style="padding-left:10%;">
+      <input type="email" class="form-control" id="email" placeholder="Your email address">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:5%;">
+      <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color:#ccac00;border-radius:0 0 0 0">Submit</button>
+   </div>
+</div>
+<br>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="modal" id="diyModal" tabindex="-1" role="dialog" style="top: 30%; opacity: 0.9; display: none;">
+<div class="modal-dialog modal-md" role="document" style="border:solid 1px #ccac00;">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;text-align: center;" id="stick3">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button><br>
+<div style="color:#fff;font-size:18px;">Coming soon!</div>
+<div style="color:#fff;font-size:14px;">Be the first to know when it's available</div>
+<br>
+<div class="row">
+   <div class="col-sm-8 col-md-8 col-lg-8" style="padding-left:10%;">
+      <input type="email" class="form-control" id="email" placeholder="enter your email">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:5%;">
+      <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color:#ccac00;border-radius:0 0 0 0">Submit</button>
+   </div>
+</div>
+<br>
+<div style="color:#fff;font-size:14px;">You can have your trip planned by an expert using "<a href="http://bluewander.life/join?action=planforme"><span style="color:#ccac00;"><u>Plan for me</u></span></a>"</div>
+<br>					
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="modal" id="signupModal" tabindex="-1" role="dialog" style="top:30%;opacity:0.9">
+<div class="modal-dialog modal-md" role="document" style="border:solid 1px #ccac00;width:450px">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;align-items:center">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button>
+<br>
+<div class="row">
+   <div class="col-sm-7 col-md-7 col-lg-7" style="padding-left:10%;">
+      <input type="email" class="form-control" id="email" placeholder="Your email address">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:5%;">
+      <button type="button" class="btn btn-block" data-dismiss="modal" style="background-color:#ccac00;border-radius:0 0 0 0">Sign Up</button>
+   </div>
+</div>
+<br>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!--Header-->
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css"></script>
+
+<style>
+.modal-backdrop {
+background-color: rgba(0,0,0,.0001) !important;
+}
+</style>
+
+
+<div class="intro-body">
+    <div class="container">
+
+      <div class="row"> 
+        
+
+
+        <!-- <video id="my-video" class="video"  poster="video/1.jpg" autoplay  loop > 
+          <source src="video/movie.mp4" type="video/mp4" />
+        </video>-->
+        <div class="col-lg-10 col-sm-6 col-xs-5 mx-auto"><br>
+          <br>
+          <h4  class="brand-heading" style="position:relative">Group | Luxury | Experiential | Travel</h4>
+          <!--<p class="intro-text">Group planning and collobration made easy!</p>--> <!-- <p id="sub"></p>-->
+          <div style="position:relative" class="text-center" id="subHeadingtext">
+				<p style="font-size: 16px;font-weight: normal;color: #fff;">Plan your perfect luxury group trip and make lifelong memories!</p>
+          </div><br><br><br><br><br>
+
+<div class="text-center" style="position:relative">
+<button type="button" id="headerButton1" class="btn btn-lg" style="border-radius: 0 0 0 0;background: rgba(198,153,55,1.0);color:#000;font-size:14px"><a href='http://www.bluewander.life/join?action=planforme' style="color:black;text-decoration: none;"><span id="buttonText">Plan for Me</span></a></button></div>
+<br><br>
+<div class="text-center" style="position:relative">
+<button type="button" id="headerButton2" data-target="#pollModal" style="border-radius: 0 0 0 0; background: rgba(198,153,55,1.0); color:#000; font-size:14px" data-toggle="modal" class="btn btn-lg"><span id="buttonText">Do It Myself</span></button>
+</div>
+          
+          <!-- <div style="background-color:rgba(163, 89, 10, 0.5);">-->
+
+          <!--</div>--> <br>
+         
+        </div>
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
+
+
+<div class="modal" id="pollModal" tabindex="-1" role="dialog" style="top: 40%; opacity: 0.9; display: none;" aria-hidden="true">
+<div class="modal-dialog modal-md" role="document" style="border:solid 1px #ccac00;">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;" id="stick3">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button><br>
+<div style="color:#fff;font-size:18px;">Coming soon!</div>
+<div style="color:#fff;font-size:14px;">Be the first to know when it's available</div>
+<br>
+<div class="row">
+   <div class="col-sm-8 col-md-8 col-lg-8" style="padding-left:10%;">
+      <input type="email" class="form-control" id="email" placeholder="enter your email">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:5%;">
+      <button type="button" class="btn btn-block" style="background-color:#ccac00;border-radius:0 0 0 0">Send</button>
+   </div>
+</div>
+<br>
+<div style="color:#fff;font-size:14px;">You can have your trip planned by an expert using "<a href="http://bluewander.life/join?action=planforme"><span style="color:#ccac00;"><u>Plan for me</u></span></a>"</div>
+<br>					
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<!--Top-->
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+</style>
+
+<section id="features" class="content-section text-center features-section">
+<div class="container" id="">
+<div class="text-left">
+
+  <fieldset class="scheduler-border">
+    <legend class="scheduler-border-WHYUS" align="left" style="border:0px;">WHY US?</legend>
+<div class="row" style="padding-left:100px;">
+      <div class="col-md-4 mx-auto">
+        <div class="col-md-11 mx-auto">
+          <div class="row">
+            <p>Pick or Create </p> Pick from one of our curate trips or start from scratch
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mx-auto">
+        <div class="col-md-11 mx-auto">
+          <div class="row">
+            <p>Planning style</p>have an expert do the planning or do it yourself 
+          </div>
+        </div>
+      </div>
+
+</div>
+
+<br>
+
+<div class="row" style="padding-left:100px;">
+      <div class="col-md-4 mx-auto">
+        <div class="col-md-11 mx-auto">
+          <div class="row">
+            <p>Group tools</p>ability to split costs and create polls to finalize plan 
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mx-auto">
+        <div class="col-md-11 mx-auto">
+          <div class="row"></div>
+            <p>Networking</p>connect with travelers and make lasting connections
+          </div>
+        </div>
+      </div>
+<br>
+</fieldset></div>
+  
+
+    </div>
+   </section>
+   
+   
+   
+   
+   
+   
+   
+
+<!--Bottom-->
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css"></script>
+
+<style>
+.modal-backdrop {
+background-color: rgba(0,0,0,.0001) !important;
+}
+.btn:hover {
+    color: white;
+}
+.btn:focus {
+    color: white;
+}
+</style>
+
+
+
+
+
+<section id="about" class="content-section about-section"> 
+<div class="container">
+<div class="group6">
+<div style="background:rgba(255,255,255,0.0);top:40px;height:auto;width:auto;position:absolute;margin:0;left:140px;font-family:'Raleway',Helvetica,Arial,serif;font-weight:600;font-style:normal;font-size:20.0px;color:rgba(46,46,56,1.0);text-align:left;line-height:24.0px;">CURATED BY EXPERTS</div>
+
+<img style="background:rgba(255,255,255,0.0);top:0;height:99px;width:99px;position:absolute;margin:0;left:0;-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);transform:rotate(90deg);" src="https://anima-uploads.s3.amazonaws.com/59d51160db5905000cd39032/59d6ba828e2a25000b68a132/59d6cb428e2a25000b68a156/img/magictriptriangle.png">
+
+</div>
+  </div>
+ </section>
+
+
+
+
+<section class="download download-section content-section text-center" id="download">
+
+
+
+ <div style="pointer-events:none;flex-direction:column;top:1675px;align-items:center;height:536px;width:100%;position:absolute;margin:0;display:flex;left:0">
+
+<div style="background:rgba(255,255,255,0.0);width:804px;height:100%;pointer-events:auto;position:relative">
+
+<div style="background:rgba(255,255,255,0.0);top:0;height:454px;width:434px;position:absolute;margin:0;left:0;border-style:solid;border-width:1px;border-color:rgba(46,46,56,1.0)"></div>
+
+<div style="background:rgba(255,255,255,0.0);top:321px;height:33px;width:138px;position:absolute;margin:0;left:554px">
+
+<div style="background:rgba(46,46,56,1.0);top:0;height:33px;width:138px;position:absolute;margin:0;left:0"></div>
+
+
+<div class="text-center" style="top:0px;height:auto;width:auto;position:absolute;margin:0;left:0px;font-family:'Raleway',Helvetica,Arial,serif;font-weight:600;font-style:normal;font-size:14.0px;color:rgba(198,153,55,1.0);text-align:left;line-height:16.0px;" id="view"><button type="button" style="width:150px;border-radius:0 0 0 0;background-color:#000" class="btn" data-toggle="modal" data-target="#viewModal">View</button></div>
+
+</div>
+<div style="background:rgba(255,255,255,0.0);top:82px;height:auto;width:250px;position:absolute;margin:0;left:554px;font-family:'Yantramanav',Helvetica,Arial,serif;font-weight:300;font-style:normal;font-size:18.0px;color:rgba(30,61,74,1.0);text-align:left;line-height:23.0px">
+Plan luxury travel for the entire wedding party at a private island in the Caribbean. Everything from home to the destination and back.</div>
+
+<div style="background:rgba(255,255,255,0.0);top:43px;height:auto;width:247px;position:absolute;margin:0;left:70px;font-family:'Raleway',Helvetica,Arial,serif;font-weight:600;font-style:normal;font-size:18.0px;color:rgba(30,61,74,1.0);text-align:left;line-height:24.0px">Wedding on a Private Island</div>
+
+<img style="background:rgba(255,255,255,0.0);top:86px;height:450px;width:450px;position:absolute;margin:0;left:67px" src="https://dl.dropbox.com/s/oqjfj79w9wkofpm/wedding.jpeg?dl=0">
+</div>
+</div>
+
+
+
+
+
+
+
+<div style="pointer-events:none;flex-direction:column;top:2409px;align-items:center;height:542px;width:100%;position:absolute;margin:0;display:flex;left:0">
+
+<div style="background:rgba(255,255,255,0.0);width:786px;height:100%;pointer-events:auto;position:relative">
+
+<div style="background:rgba(255,255,255,0.0);top:0;height:454px;width:434px;position:absolute;margin:0;left:268px;border-style:solid;border-width:1px;border-color:rgba(46,46,56,1.0)">
+</div>
+
+<div style="background:rgba(255,255,255,0.0);top:321px;height:33px;width:138px;position:absolute;margin:0;left:0">
+
+<div style="background:rgba(46,46,56,1.0);top:0;height:33px;width:138px;position:absolute;margin:0;left:0"></div>
+
+
+<div class="text-center" style="top:0px;height:auto;width:auto;position:absolute;margin:0;left:0px;font-family:'Raleway',Helvetica,Arial,serif;font-weight:600;font-style:normal;font-size:14.0px;color:rgba(198,153,55,1.0);text-align:left;line-height:16.0px;" id="view"><button type="button" style="width:150px;border-radius:0 0 0 0;background-color:#000" class="btn" data-toggle="modal" data-target="#viewModal">View</button></div>
+
+
+</div>
+
+<div style="background:rgba(255,255,255,0.0);top:92px;height:auto;width:250px;position:absolute;margin:0px;left:0;font-family:'Yantramanav',Helvetica,Arial,serif;font-weight:300;font-style:normal;font-size:18.0px;color:rgba(30,61,74,1.0);text-align:left;line-height:23.0px">
+Plan your 25th Wedding Anniversary in private yacht in Croatia or luxury resort in Cancun. Plan travel for everyone too. All in one place. </div>
+
+<div style="background:rgba(255,255,255,0.0);top:43px;height:auto;width:247px;position:relative;margin:0;left:336px;font-family:'Raleway',Helvetica,Arial,serif;font-weight:600;font-style:normal;font-size:20.0px;color:rgba(30,61,74,1.0);text-align:left;line-height:24.0px">Anniversary Celebration</div>
+
+<img style="background:rgba(255,255,255,0.0);top:92px;height:450px;width:450px;position:absolute;margin:0;left:336px" src="https://dl.dropbox.com/s/39i6goiu97x0kww/Anniversary.jpeg?dl=0"></div></div>
+
+
+
+
+
+
+
+
+
+
+
+ <div style="pointer-events:none;flex-direction:column;top:3162px;align-items:center;height:536px;width:100%;position:absolute;margin:0;display:flex;left:0">
+
+<div style="background:rgba(255,255,255,0.0);width:804px;height:100%;pointer-events:auto;position:relative">
+
+<div style="background:rgba(255,255,255,0.0);top:0;height:454px;width:434px;position:absolute;margin:0;left:0;border-style:solid;border-width:1px;border-color:rgba(46,46,56,1.0)"></div>
+
+<div style="background:rgba(255,255,255,0.0);top:321px;height:33px;width:138px;position:absolute;margin:0;left:554px">
+
+<div style="background:rgba(46,46,56,1.0);top:0;height:33px;width:138px;position:absolute;margin:0;left:0"></div>
+
+
+<div class="text-center" style="top:0px;height:auto;width:auto;position:absolute;margin:0;left:0px;font-family:'Raleway',Helvetica,Arial,serif;font-weight:600;font-style:normal;font-size:14.0px;color:rgba(198,153,55,1.0);text-align:left;line-height:16.0px;" id="view"><button type="button" style="width:150px;border-radius:0 0 0 0;background-color:#000" class="btn" data-toggle="modal" data-target="#viewModal">View</button></div>
+
+</div>
+<div style="background:rgba(255,255,255,0.0);top:82px;height:auto;width:250px;position:absolute;margin:0;left:554px;font-family:'Yantramanav',Helvetica,Arial,serif;font-weight:300;font-style:normal;font-size:18.0px;color:rgba(30,61,74,1.0);text-align:left;line-height:23.0px">
+Experience world cuisine with your friends on a two-week private jet expedition from Seoul to Paris via Tokyo, Hong Kong, Chiang Mai, Mumbai, Florence, Lisbon and Copenhagen.</div>
+<div style="background:rgba(255,255,255,0.0);top:43px;height:auto;width:247px;position:absolute;margin:0;left:70px;font-family:'Raleway',Helvetica,Arial,serif;font-weight:600;font-style:normal;font-size:20.0px;color:rgba(30,61,74,1.0);text-align:left;line-height:24.0px">Friends Trip</div>
+<img style="background:rgba(255,255,255,0.0);top:86px;height:450px;width:450px;position:absolute;margin:0;left:67px" src="https://dl.dropbox.com/s/7ebgtj56eq9j3p6/friend.jpeg?dl=0">
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+ <section id="contact" class="content-section text-left partner-section">
+<hr><br><br>
+
+
+
+<style>
+#allTestimonials.container:before,
+#allTestimonials.container:after,
+#allTestimonials .row:before,
+#allTestimonials .row:after {
+   content: normal; 
+}
+</style>
+
+ <div class="container" id="allTestimonials">
+    <div class="row "> 
+      
+     
+      <div class="col-md-4 mx-auto" id="testimonials">
+        <div class="col-md-11 mx-auto">
+          <div class="row"> </div>
+          <div class="row">
+
+            <p>"I thought it would be a pain to plan a college reunion trip but the group planner is great. It even let's you create polls!"</p>- Bradley Dunn.
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mx-auto" id="testimonials">
+        <div class="col-md-11 mx-auto">
+          <div class="row"> </div>
+          <div class="row" id="authorText">
+           
+            <p>"Coming back from the very luxury, fun, and informative family trip. Thank you BW experts!"</p>                        - Maria Bryan.
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 mx-auto" id="testimonials">
+        <div class="col-md-11 mx-auto">
+          <div class="row"></div>
+          <div class="row">
+            
+            <p>"This was my first time using this site and that too for my 50th birthday. Everything went pretty smooth and the experience unforgettable!!!"</p><span id="author">                        - Jerome Ryan.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div></section>
+
+
+<div class="modal" id="viewModal" tabindex="-1" role="dialog" style="top: 40%; opacity: 0.9; display: none;">
+<div class="modal-dialog modal-lg" role="document" style="border:solid 1px #ccac00;">
+<div class="modal-content">
+<div class="modal-body" style="background-color:#484848;" id="stick3">
+<button type="button" class="close" data-dismiss="modal" style="position:absolute;color:#fefefe;top:5%;right:5%;font-size:12px;">X</button><br><br>
+<div style="color:#fff;font-size:16px;text-align:center">We are still working on the details! Are you interested in this experience or want to learn about other similar ones? Please leave your email and one of our travel specialists will contact you!</div>
+<br>
+<div class="row">
+   <div class="col-sm-8 col-md-8 col-lg-8" style="padding-left:20%;">
+      <input type="email" class="form-control" id="email" placeholder="enter your email">
+   </div>
+   <div class="col-sm-4 col-md-4 col-lg-4" style="padding-right:15%;">
+      <button type="button" class="btn btn-block" style="background-color:#ccac00;border-radius:0 0 0 0">Send</button>
+   </div>
+</div>
+
+<br>					
+</div>
+</div>
+</div>
+</div>   
